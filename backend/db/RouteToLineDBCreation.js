@@ -36,6 +36,6 @@ db.connect(function(error) {
                         });
                     })
                 });
-            });
+        });
     }
 });

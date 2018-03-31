@@ -21,4 +21,5 @@ db.connect(function(error) {
             });
         });
     }
+    db.end();
 });
