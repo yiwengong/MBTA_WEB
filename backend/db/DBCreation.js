@@ -79,6 +79,7 @@ db.connect(function(error) {
             if (err) throw err;
             console.log('History table created');
         });
+        db.end();
     }
 });
 

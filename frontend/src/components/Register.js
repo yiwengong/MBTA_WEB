@@ -16,7 +16,7 @@ class RegistrationForm extends Component {
             if (!err) {
                 console.log('Received values of form: ', values);
 
-                axios.post(`${API_ROOT}/register`, {name : values.username, password: values.password})
+                axios.post(`${API_ROOT}/register`, {email: values.email, name: values.name, password: values.password})
                     .then((response) => {
                         message.success(response.data.message);
                         this.props.handleLogin(response.data.userId);
