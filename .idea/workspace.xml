@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232d2afd-ca3f-45dc-a336-ab7bc4763ae7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/db/DBCreation.js" afterPath="$PROJECT_DIR$/backend/db/DBCreation.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Register.js" afterPath="$PROJECT_DIR$/frontend/src/components/Register.js" />
+      <change beforePath="$PROJECT_DIR$/backend/index.js" afterPath="$PROJECT_DIR$/backend/index.js" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Login.js" afterPath="$PROJECT_DIR$/frontend/src/components/Login.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,9 +17,21 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="366">
+              <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,13 +86,13 @@
         <option value="$PROJECT_DIR$/backend/saltPassword.js" />
         <option value="$PROJECT_DIR$/frontend/src/styles/History.css" />
         <option value="$PROJECT_DIR$/frontend/src/styles/Home.css" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Login.js" />
         <option value="$PROJECT_DIR$/frontend/src/styles/Register.css" />
         <option value="$PROJECT_DIR$/backend/db/DBCreation.js" />
         <option value="$PROJECT_DIR$/backend/db/RouteToLineDBCreation.js" />
         <option value="$PROJECT_DIR$/backend/db/RouteDBCreation.js" />
         <option value="$PROJECT_DIR$/backend/db/LineDBCreation.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/Register.js" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Login.js" />
         <option value="$PROJECT_DIR$/backend/index.js" />
       </list>
     </option>
@@ -299,12 +310,12 @@
       <workItem from="1522337025152" duration="15758000" />
       <workItem from="1522441659276" duration="12258000" />
       <workItem from="1522465427238" duration="1530000" />
-      <workItem from="1522468815708" duration="702000" />
+      <workItem from="1522468815708" duration="1294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70264000" />
+    <option name="totallyTimeSpent" value="70856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1204" height="747" extended-state="0" />
@@ -653,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styles/Register.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -707,10 +711,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="366">
+          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
           <folding />
         </state>
       </provider>

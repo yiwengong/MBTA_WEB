@@ -29,7 +29,7 @@ class NormalLoginForm extends Component {
         return (
             <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
-                    {getFieldDecorator('Email', {
+                    {getFieldDecorator('email', {
                         rules: [{ required: true, message: 'Please input your email!' }],
                     })(
                         <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email" />

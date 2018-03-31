@@ -55,7 +55,7 @@ app.post('/register', function(req, res) {
 app.post('/login', function(req, res) {
     var email = req.body.email;
     var password = req.body.password;
-    var sql = 'SELECT * FROM users WHERE name = \'' + email + '\'';
+    var sql = 'SELECT * FROM users WHERE email = \'' + email + '\'';
     db.query(sql, function(err,result) {
         if (err) {
             res.status(401).send({message: 'Login Failed'});
@@ -114,7 +114,6 @@ app.post('/history', function(req, res) {
     var to_id = req.body.to_id;
     var sql = 'INSERT INTO history (id_user, from_id, to_id) VALUES ('
         + '\'' + userID + '\', ' + '\'' + from_id + '\',' + '\''+ to_id  + '\')';
-    console.log(sql);
     db.query(sql, function(err) {
         if (err) {
             res.status(401).send({message: 'Can not save the record into history'});
