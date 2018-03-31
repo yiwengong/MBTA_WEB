@@ -77,10 +77,24 @@ class RegistrationForm extends Component {
             <Form onSubmit={this.handleSubmit} className="register-form">
                 <FormItem
                     {...formItemLayout}
-                    label= "Username"
+                    label="E-mail"
                 >
-                    {getFieldDecorator('username', {
-                        rules: [{ required: true, message: 'Please input your username!', whitespace: true }],
+                    {getFieldDecorator('email', {
+                        rules: [{
+                            type: 'email', message: 'The input is not valid E-mail!',
+                        }, {
+                            required: true, message: 'Please input your E-mail!',
+                        }],
+                    })(
+                        <Input />
+                    )}
+                </FormItem>
+                <FormItem
+                    {...formItemLayout}
+                    label= "Name"
+                >
+                    {getFieldDecorator('name', {
+                        rules: [{ required: true, message: 'Please input your name!', whitespace: true }],
                     })(
                         <Input />
                     )}

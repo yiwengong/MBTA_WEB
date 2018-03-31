@@ -38,10 +38,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/register', function(req, res) {
+    var email = req.body.email;
     var name = req.body.name;
     var encryptPassword  = saltPassword.makePasswordEntry(req.body.password);
-    var sql = 'INSERT INTO users (name, password, salt) VALUES ('
-        + '\'' + name + '\', ' + '\'' + encryptPassword.hash +'\',' +'\'' + encryptPassword.salt + '\')';
+    var sql = 'INSERT INTO users (email, name, password, salt) VALUES ('
+        + '\'' + email + '\',' + '\'' + name + '\', ' + '\'' + encryptPassword.hash +'\',' +'\'' + encryptPassword.salt + '\')';
     db.query(sql, function(err,result) {
        if (err) {
            res.status(401).send({message: 'Register Failed'});
@@ -52,9 +53,9 @@ app.post('/register', function(req, res) {
 });
 
 app.post('/login', function(req, res) {
-    var name = req.body.name;
+    var email = req.body.email;
     var password = req.body.password;
-    var sql = 'SELECT * FROM users WHERE name = \'' + name + '\'';
+    var sql = 'SELECT * FROM users WHERE name = \'' + email + '\'';
     db.query(sql, function(err,result) {
         if (err) {
             res.status(401).send({message: 'Login Failed'});

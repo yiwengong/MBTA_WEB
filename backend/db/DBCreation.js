@@ -39,7 +39,7 @@ db.connect(function(error) {
             if (err) throw err;
         });
 
-        sql = 'CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) UNIQUE, password VARCHAR(255), salt VARCHAR(255))';
+        sql = 'CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255) UNIQUE, name VARCHAR(255) UNIQUE, password VARCHAR(255), salt VARCHAR(255))';
         db.query(sql, function(err) {
             if (err) throw err;
             console.log('Users table created');
