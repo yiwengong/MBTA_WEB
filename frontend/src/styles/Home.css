@@ -1,0 +1,9 @@
+.station-input {
+    width: 300px;
+    margin: 20px;
+}
+
+.to-history-button {
+    float: left;
+    margin-left: 40px;
+}
